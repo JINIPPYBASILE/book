@@ -15,9 +15,9 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Charadex",
-  url: "http://127.0.0.1:3000/c:/Users/verab/Downloads/charadex-v1.0-1.5.5/charadex-v1.0-1.5.5/",
-  description: `A tool for organizing small ARPGs and species.`
+  title: "Inclusive Book Archive",
+  url: "https://jinippybasile.github.io/book/",
+  description: `An archive of inclusive children's books.`
 }
 
 /* ==================================================================== */
