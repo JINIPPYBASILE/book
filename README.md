@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Charadex v.1.5.5
 
 > [!IMPORTANT]
@@ -59,3 +60,7 @@ If you're using this version and find any bugs, please let me know in the [Disco
 - [Support Charadex](https://ko-fi.com/charadex)
 - [Example Site](https://charadex-team.github.io/charadex-v1.0/index.html)
 - [Example Sheet](https://docs.google.com/spreadsheets/d/1GwgfLizD3HQCieGia6di-TfU4E3EipT9Jb0BDZQwNak/edit?usp=sharing)
+=======
+# book
+test site for book website
+>>>>>>> 9ec6b947c878b0d23cb72782c47dc50f85f23373
