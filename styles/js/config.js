@@ -331,8 +331,8 @@ charadex.page.masterlist = {
     toggle: true,
     parameters: {
       'Gender': charadex.sheet.options.gender,
-      'Race/Ethnicity': charadex.sheet.options.ethnicity,
-      'Perspective': charadex.sheet.options.perspective,
+      'Ethnicity': charadex.sheet.options.ethnicity,
+      'Perspective': charadex.sheet.options.perspective
     }
   },
 
