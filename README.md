@@ -20,6 +20,11 @@ Website mockup created by V. Go using Charadex
 - Light mode/dark mode toggle, or even custom site colors(for fun!)
 - "random book" feature, so that people who want to be adventurous can check out a new book (?)
 
+## Unused links (can impliment later if interested)
+- News (Navbar)
+- About (Help dropdown)
+- FAQ (Help dropdown)
+- Help Desk (Help Dropdown)
 
 ## Thank you!
 
