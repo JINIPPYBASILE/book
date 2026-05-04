@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'opendyslexia';
+  src: url(http://127.0.0.1:3000/c:/Users/verab/Desktop/book-charadex/fonts/opendyslexic-regular-webfont.woff);
+}
+
+
+
+
 body {
 
   /* ============================================================= */
@@ -15,21 +23,21 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color: #8FB7D4;
+  --cd-primary-color: #428abd;
   --cd-primary-text-color: #fff;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color: #939799;
+  --cd-secondary-color: #1d6082;
   --cd-secondary-text-color: #fff;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #f8f8f8;
-  --cd-content-background-color: #ffffff;
-  --cd-faded-background-color: #f8f8f8;
+  --cd-body-background-color: #fdfeff;
+  --cd-content-background-color: #dceefd;
+  --cd-faded-background-color: #a7d7f1;
 
   /* Background Extras */
   --cd-body-background-image: url();
@@ -37,7 +45,7 @@ body {
   /* ============================================================= */
   /* Text
   ================================================================ */
-  --cd-body-text-color: #303030;
+  --cd-body-text-color: #262a2e;
   --cd-faded-text-color: #575757;
 
   /* ============================================================= */
@@ -51,7 +59,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color: #222222;
+  --cd-navbar-background-color: #112d3f;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
@@ -216,6 +224,51 @@ body {
 
 }
 
+
+body.dark {
+     --cd-primary-color: #4485b3;
+  --cd-primary-text-color: #fff;
+
+  /* ============================================================= */
+  /* Secondary Color
+  ================================================================ */
+  --cd-secondary-color: #1d6082;
+  --cd-secondary-text-color: #fff;
+
+  /* ============================================================= */
+  /* Backgrounds
+  ================================================================ */
+  --cd-body-background-color: #040b12;
+  --cd-content-background-color: #20313e;
+  --cd-faded-background-color: #28435d;
+   
+
+    --cd-body-text-color: #e2eefa;
+  --cd-faded-text-color: #ffffff;
+    --cd-link-text-color: #56a8e3;
+
+
+
+      --cd-navbar-brand-color: var(--cd-primary-color);
+  --cd-navbar-brand-color-hover: var(--cd-secondary-color);
+  --cd-navbar-text-color: var(--cd-content-background-color);
+  --cd-navbar-link-color: #fff
+  --cd-navbar-link-color-hover: var(--cd-primary-color);
+  --cd-navbar-font-family: var(--cd-header-font-family);
+
+
+    --cd-hr-border-color: #4485b3;
+  --cd-footer-text-color: #4485b3;
+  --cd-footer-link-color: #4485b3;
+  --cd-footer-link-color-hover:#78acd2;
+}
+
+
+
+body.dyslexia{
+    --cd-body-font-family: 'opendyslexia', sans-serif;
+  --cd-header-font-family: 'opendyslexia', sans-serif;
+}
 
 /* ============================================================= */
 /* General Page Styles

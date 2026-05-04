@@ -16,7 +16,8 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "Inclusive Book Archive",
-  url: "https://jinippybasile.github.io/book/",
+  url: "http://127.0.0.1:3000/c:/Users/verab/Desktop/book-charadex/",
+  /*url: "https://jinippybasile.github.io/book/",*/
   description: `An archive of inclusive children's books.`
 }
 
@@ -43,13 +44,14 @@ charadex.sheet = {
 
 
   options: {
-
+    disabilitytype:['ND', 'Physical Disability', 'Physical Disability/Chronic Illness','Speech Language Disorder', 'Temporary/Infection', 'Chronic Illness'],
     gender: ['Male', 'Female', 'Diverse'],
-    ethnicity: ['White', 'Black', 'Middle East', 'Afro-Latina', 'South Asian', 'Diverse'],
-    perspective: ['1st Person', '2nd Person','3rd Person','Collective'],
-    species: ["Autism/Non-verbal",'Mobility','Mobility (War)','Deafness','SPD (Seeking)','Blindness','Autism','Diverse (Gen)','Diverse/Comm.'],
+    ethnicity: ['White', 'Black', 'Indigenous', 'Middle Eastern', 'East Asian', 'Afro-Latina', 'Latine','Mixed','Mixed/Multiracial', 'South Asian', 'Other/Unspecified'],
+    perspective: ['1st Person', '2nd Person','3rd Person'],
+    species: ["ADHD", "Anxiety", "Apraxia", "A/autism", "AAC", 'Blind/low vision','Cerebral Palsy', "Chickenpox", "Deafness", "Depression", "Down Syndrome",  "HIV",'Learning Disability','Stuttering',"Trauma","Tourette Syndrome" ],
     itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
-    traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
+    traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations'],
+    authoridentity:["ND", "Physical", "Speech", "2SLGBTQ+"]
 
   }
 
@@ -330,9 +332,10 @@ charadex.page.masterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Gender': charadex.sheet.options.gender,
+      'Disability Type': charadex.sheet.options.disabilitytype,
       'Ethnicity': charadex.sheet.options.ethnicity,
-      'Perspective': charadex.sheet.options.perspective
+      'Perspective': charadex.sheet.options.perspective,
+       'Author Identity': charadex.sheet.options.authoridentity
     }
   },
 
@@ -345,7 +348,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Artist', 'Author']
+    parameters: ['All', 'Artist', 'Author', 'Title']
   },
 
   prevNext: {
@@ -524,7 +527,7 @@ charadex.page.index = {
   designs: {
     ... charadex.page.masterlist,
     dexSelector: 'design',
-    amount: 4,
+    amount: 8,
   }
 
 };
