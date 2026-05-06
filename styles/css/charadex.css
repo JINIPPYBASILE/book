@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
 @font-face {
   font-family: 'opendyslexia';
   src: url(https://jinippybasile.github.io/book/fonts/opendyslexic-regular-webfont.woff);
 }
-
-
 
 
 body {
@@ -266,8 +267,8 @@ body.dark {
 
 
 body.dyslexia{
-    --cd-body-font-family: 'opendyslexia', sans-serif;
-  --cd-header-font-family: 'opendyslexia', sans-serif;
+    --cd-body-font-family: 'Lexend', sans-serif !important;
+  --cd-header-font-family: 'Lexend', sans-serif !important;
 }
 
 /* ============================================================= */
@@ -299,15 +300,19 @@ a,
 a:visited {
   color: var(--cd-link-text-color);
   transition: color .2s ease-in-out;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus,
 a:active {
   color: var(--cd-link-text-color-hover);
-  text-decoration: none;
 }
 
+
+.nounderline {
+  text-decoration:none !important
+}
 /* ============================================================= */
 /* Navbar
 /* ============================================================= */
@@ -315,11 +320,13 @@ a:active {
   background-color: var(--cd-navbar-background-color) !important;
   font-family: var(--cd-navbar-font-family) !important;
   z-index: 2000;
+  text-decoration:none !important
 }
 
 .navbar .navbar-brand {
   color: var(--cd-navbar-brand-color) !important;
   font-size: 2rem;
+   text-decoration:none !important
 }
 
 .navbar .navbar-brand:hover,
@@ -329,11 +336,13 @@ a:active {
 
 .navbar .navbar-nav .nav-link {
   color: var(--cd-navbar-link-color) !important;
+   text-decoration:none !important
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
   color: var(--cd-navbar-link-color-hover) !important;
+  
 }
 
 .navbar .navbar-toggler {
@@ -344,6 +353,7 @@ a:active {
 .navbar .nav-link {
   display: flex;
   align-items: center;
+  
 }
 
 .navbar .nav-link-icon {
@@ -378,6 +388,7 @@ a:active {
 .navbar .dropdown-item-text {
   color: var(--cd-navbar-dropdown-link-color) !important;
   transition: color .2s ease, background .2s ease;
+    text-decoration:none !important;
 }
 
 .navbar .dropdown-item:hover,
@@ -537,6 +548,7 @@ a:active {
   border-style: var(--cd-button-border-style) !important;
   border-width: var(--cd-button-border-width) !important;
   border-radius: var(--cd-button-border-radius) !important;
+  text-decoration: none !important;
 }
 
 .btn.btn-primary,
