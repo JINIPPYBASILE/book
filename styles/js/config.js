@@ -49,9 +49,10 @@ charadex.sheet = {
     ethnicity: ['White', 'Black', 'Indigenous', 'Middle Eastern', 'East Asian', 'Afro-Latina', 'Latine','Mixed','Mixed/Multiracial', 'South Asian', 'Other/Unspecified'],
     perspective: ['1st Person', '2nd Person','3rd Person'],
     species: ["ADHD", "Anxiety", "Apraxia", "A/autism", "AAC", 'Blind/low vision','Cerebral Palsy', "Chickenpox", "Deafness", "Depression", "Down Syndrome",  "HIV",'Learning Disability','Stuttering',"Trauma","Tourette Syndrome" ],
+     specifictype: ["ADHD", "Anxiety", "Apraxia", "A/autism", "AAC", 'Blind/low vision','Cerebral Palsy', "Chickenpox", "Deafness", "Depression", "Down Syndrome",  "HIV",'Learning Disability','Stuttering',"Trauma","Tourette Syndrome" ], species: ["ADHD", "Anxiety", "Apraxia", "A/autism", "AAC", 'Blind/low vision','Cerebral Palsy', "Chickenpox", "Deafness", "Depression", "Down Syndrome",  "HIV",'Learning Disability','Stuttering',"Trauma","Tourette Syndrome" ],
     itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations'],
-    authoridentity:["ND", "Physical", "Speech", "2SLGBTQ+"]
+    authoridentity:["ND", "Physical", "Speech", "2SLGBTQI+", "Down syn.", "Chronic", "Indigenous"]
 
   }
 
@@ -332,7 +333,7 @@ charadex.page.masterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Disability Type': charadex.sheet.options.disabilitytype,
+       'Specific Type': charadex.sheet.options.specifictype,
       'Ethnicity': charadex.sheet.options.ethnicity,
       'Perspective': charadex.sheet.options.perspective,
        'Author Identity': charadex.sheet.options.authoridentity
@@ -341,8 +342,8 @@ charadex.page.masterlist = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Species',
-    parameters: charadex.sheet.options.species,
+    folderProperty: 'disabilitytype',
+    parameters:  charadex.sheet.options.disabilitytype,
   },
 
   search: {

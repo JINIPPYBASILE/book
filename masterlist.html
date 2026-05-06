@@ -65,17 +65,32 @@
   <-- Main List
   <-------------------------------------------------------------------- -->
   <div class="container" id="main-container">
-    <div id="charadex-gallery">
+    <div class="alert alert-primary">
+           <b>Tips for searching!</b>
 
-      <!-- Top Card Container
-      <!-- ----------------------------------------------------------------- -->
-      <div class="card p-md-5 p-4 mb-4">
+           <div class="row no-gutters col-12 ">
+             <div class="row no-gutters col-3 ">
+        <div class="badge badge-info col-3 mr-2 px-2 ">Text</div> <span class="col-7"><small>- Featured Book</small></span></div>
+        <div class="row no-gutters col-4">
+             <div class="badge badge-success col-3 px-2  mr-2">Text</div> <span class="col-7">
+            <small>- Author Identity</small>
+             </span> 
+          
+  </div>
+  <small class=" mt-1 col-5">Refresh to completely reset your search parameters!</small>
+           </div>
+   
+    </div>
+    <div id="charadex-gallery">
+      <div class="row no-gutters">
+<div class="filtering-sidebar col-lg-4 col-12">
+     <div class="card p-lg-3 p-4 mb-4">
 
         <!-- Title
         <!-- --------------------------------------------------------------- -->
-        <h3 class="mb-0"><a href="masterlist.html">Book Masterlist</a></h3>
+        <h5 class="mb-0"><a href="masterlist.html">Book Masterlist</a></h5>
 
-      <i>Please feel free to explore the filtration system below to look for books according to certain parameters!</i>
+ 
         <!-- Faux Folders
         <!-- --------------------------------------------------------------- -->
         <div style="display:none;" id="charadex-folder-container">
@@ -85,13 +100,13 @@
           <div class="row no-gutters m-n1" id="charadex-folders"></div>
           <hr>
            <div class="row no-gutters">
-            <div class=" col-lg-3 col-md-4 col-6 mt-2 pr-2" >
-              <a class="btn btn-primary col-12" href="masterlist.html?pride=2slgbtqi+">    2SLGBTQI+</a>
+            <div class=" col-lg-6 col-6 pr-2 mb-lg-2 mb-0" >
+              <a class="btn btn-primary charadex-folder-button col-12" href="masterlist.html?pride=2slgbtqi+">    2SLGBTQI+</a>
         
             </div>
 
-                <div class=" col-lg-3 col-md-4 col-6 mt-2 pr-2" >
-              <a class="btn btn-primary col-12" href="masterlist.html?featured=yes">     Featured</a>
+                <div class=" col-lg-6 col-6 " >
+              <a class="btn btn-primary col-12 charadex-folder-button col-12" href="masterlist.html?featured=yes">     Featured</a>
         
             </div>
 
@@ -101,8 +116,8 @@
 
           <!-- Buttons -->
           <div style="display:none;">
-            <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
-              <a class="btn btn-primary d-block" href=""></a>
+            <div class="col-lg-12 col-6 p-1"  id="charadex-folder">
+              <a class="btn btn-primary d-block charadex-folder-button" href=""></a>
             </div>
           </div>
         </div>
@@ -111,12 +126,12 @@
         <!-- --------------------------------------------------------------- -->
         <div style="display:none;" id="charadex-filter-container">
           <hr>
-          <div class="row no-gutters m-n1" id="charadex-filters"></div>
+          <div class="row no-gutters m-n1 charadex-folder-button" id="charadex-filters"></div>
           <!-- Filters -->
           <div style="display: none;">
-            <div class="col-md-4 col-12 p-1" id="charadex-filter">
-              <label class="px-2"></label>
-              <select class="form-control" multiple></select>
+            <div class="col-lg-12 col-6 pl-lg-0 pl-2 charadex-folder-button" id="charadex-filter">
+              <label class="px-2 charadex-folder-button"></label>
+              <select class="form-control charadex-folder-button" multiple style="font-size:0.7rem"></select>
             </div>
           </div>
         </div>
@@ -128,11 +143,11 @@
           <div class="row no-gutters m-n1">
             <!-- Search Filter -->
             <div class="col-md-4 col-6 p-1" style="display: none;">
-              <select class="form-control" id="charadex-search-filter"></select>
+              <select class="form-control charadex-folder-button" id="charadex-search-filter" ></select>
             </div>
             <!-- Search Bar -->
             <div class="col d-flex p-1">
-              <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
+              <input class="form-control search charadex-folder-button" type="search" placeholder="Search" id="charadex-search">
             </div>
           </div>
         </div>
@@ -141,17 +156,17 @@
         <!-- --------------------------------------------------------------- -->
         <div style="display: none;" class="charadex-pagination-container">
           <hr class="mb-4 mt-4">
-          <div class="nav d-flex justify-content-center mb-n4">
+          <div class="nav d-flex justify-content-center">
             <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
             <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
             <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
           </div>
         </div>
-
+<hr>
         <!-- Prev & Next Topbar
         <!-- --------------------------------------------------------------- -->
         <div style="display: none;" id="charadex-prevnext-container">
-          <hr>
+    
           <div class="row no-gutters px-2 text-uppercase">
             <div class="col-6 px-1">
               <a id="entryPrev" href=""><i class="fas fa-chevron-left mr-2"></i><b><span></span></b></a>
@@ -163,10 +178,12 @@
         </div>
 
       </div>
+</div>
 
       <!-- List Items Render Here
       <!-- --------------------------------------------------------------- -->
-      <div class="row no-gutters charadex-list softload m-n2"></div>
+   <div class="entry-container col-lg-8 col-12 pl-3">
+       <div class="row no-gutters charadex-list softload m-n2"></div>
 
       <!-- Pagination
       <!-- --------------------------------------------------------------- -->
@@ -179,6 +196,13 @@
           </div>
         </div>
       </div>
+   </div>
+      </div>
+
+      <!-- Top Card Container
+      <!-- ----------------------------------------------------------------- -->
+   
+
 
     </div>
   </div>
@@ -197,14 +221,14 @@
 
     <!-- Gallery Items
     <!-- --------------------------------------------------------------- -->
-    <div class="col-lg-3 col-sm-6 p-2" id="charadex-gallery-item">
+    <div class="col-lg-4 col-sm-6 p-2" id="charadex-gallery-item">
       <div class="card h-100">
 
         <!-- Header -->
         <div class="card-header text-center">
-          <h5 class="mb-0">
-            <a class="title profilelink nounderline" href=""></a> <span class="badge badge-info  featuredbook "></span>
-          </h5>
+          <h6 class="mb-0">
+         <b>   <a class="title profilelink nounderline" href=""></a> <span class="badge badge-info  featuredbook "></span> <span class="badge badge-success  authoridentity"></span></b>
+          </h6>
         </div>
 <span class="badge badge-primary rounded-0 typeone "></span>
 
@@ -213,8 +237,9 @@
         <!-- Image-->
         <div class="card-body cd-gallery-card d-flex flex-fill">
           <img class="image img-fluid m-auto" src="" >
+          
         </div>
-
+<small class="text-center mt-n4 mt-lg-n4 mb-3" style="opacity:0.55"><span>Image description: </span><span class=" alttextcover"></span></small>
       <div class="badge badge-primary mx-auto mb-3">
          REF. ID:  <span class="profileid "></span>
       </div>
@@ -244,7 +269,7 @@
         <div class="cd-profile-image-container p-md-5 p-4 text-center" >
           <img class="image img-fluid" alt="Book cover" src="">
         </div>
-
+        <small class="text-center mt-n4 mt-lg-n4 mb-3" style="opacity:0.55"><span>Image description: </span><span class=" alttextcover"></span></small>
 
         <!-- Nav Tabs
         <!-- ----------------------------------------------------------- -->
@@ -273,12 +298,12 @@
             <h4 class="text-primary">Book information</h4>
             <div class="row no-gutters m-n2">
 
-              <div class="col-md-6 p-2">
+              <div class="col-md-12 p-2">
                 <div class="card bg-faded p-4 h-100">
 
                   <!-- Item -->
                      <b class="text-muted">Classified as:</b>
-                    <small> <i class="text-primary ">To understand how our project defines these terms, please refer to our  <a href="index.html">main page</a> for a list of disclaimers.</i></small>
+                    <small> <i class="text-primary ">To understand how our project defines these terms, please refer to our  <a href="index.html">main page</a> for some notes.</i></small>
               
                      <div class="row no-gutters mt-2">
 <span class="badge badge-primary species col-auto p-1 mr-2 mb-1"></span>
@@ -306,7 +331,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6 p-2">
+              <div class="col-12 p-2">
                 <div class="card bg-faded p-4 h-100">
 
                   <!-- Item -->
@@ -314,8 +339,8 @@
                 
                   <div class="d-flex no-gutters mb-2">
                     <b class="text-muted col-md-5 col-6">Author</b>
-                    <div class="author authorlink" data-charadex-field="author"></div> <i><div class=" ml-2 badge badge-primary authoridentity"></div></i>
-   <!--<a class="author authorlink" data-charadex-field="author"></a> <i><div class=" ml-2 badge badge-primary authoridentity"></div></i>-->
+                    <div class="author authorlink" data-charadex-field="author"></div> <i><div class=" ml-2 badge badge-success authoridentity"></div></i>
+   <!--<a class="author authorlink" data-charadex-field="author"></a> <i><div class=" ml-2 badge badge-success authoridentity"></div></i>-->
                   </div>
     
                   <!-- Item -->

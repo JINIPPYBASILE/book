@@ -94,6 +94,10 @@ body {
   --cd-rarity-legendary-bg: #5a473e;
   --cd-rarity-legendary-txt: var(--cd-rarity-common-txt);
 
+    /* Alert colors*/
+    --alert-text: #212a30;
+     --alert-color:#c4e3fa;
+
 
   /* ============================================================= */
   /*
@@ -262,6 +266,10 @@ body.dark {
   --cd-footer-text-color: #4485b3;
   --cd-footer-link-color: #4485b3;
   --cd-footer-link-color-hover:#78acd2;
+
+
+     --alert-color: #455868;
+     --alert-text:#c4e3fa;
 }
 
 
@@ -307,6 +315,12 @@ a:hover,
 a:focus,
 a:active {
   color: var(--cd-link-text-color-hover);
+}
+
+.alert {
+ background-color:var(--alert-color);
+ color:var(--alert-text)
+
 }
 
 
@@ -716,16 +730,21 @@ body {
 
 #main-container {
   min-height: calc(100vh - 105px);
-  padding: 1rem;
+  padding: 1.4rem;
   -ml-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
 }
 
 @media (min-width: 768px) {
   #main-container {
-    padding: 5rem 1.5rem;
+    padding: 2rem 0rem;
   }
 }
+
+.filtering-sidebar, .charadex-folder-button{
+  font-size:0.85rem !important
+}
+
 
 /* Remove ugly box shadow */
 button:focus,
