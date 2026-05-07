@@ -6,7 +6,7 @@ const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "dark") {
     root.classList.add("dark");
-    toggleBtn.textContent = "☼";
+    toggleBtn.textContent = "☾";
 }
 
 
@@ -17,12 +17,12 @@ toggleBtn.onclick = () => {
 
     if (root.classList.contains("dark")) {
         localStorage.setItem("theme", "dark");
-        toggleBtn.textContent = "☼";
+        toggleBtn.textContent = "☾";
     } 
 
     else {
         localStorage.setItem("theme", "light");
-        toggleBtn.textContent = "☾";
+        toggleBtn.textContent = "☼";
     }
 };
 

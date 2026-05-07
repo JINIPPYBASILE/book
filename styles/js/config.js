@@ -379,8 +379,8 @@ charadex.page.masterlist = {
     parameters: {
        'Specific Type': charadex.sheet.options.specifictype,
       'Ethnicity': charadex.sheet.options.ethnicity,
-      'Perspective': charadex.sheet.options.perspective,
-       'Author Identity': charadex.sheet.options.authoridentity
+      'Perspective': charadex.sheet.options.perspective/*,
+       'Author Identity': charadex.sheet.options.authoridentity*/
     }
   },
 
