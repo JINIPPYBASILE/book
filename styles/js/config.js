@@ -45,15 +45,15 @@ charadex.sheet = {
 
 
   options: {
-    disabilitytype:['ND', 'Physical Disability', 'Physical Disability/Chronic Illness','Speech Language Disorder', 'Temporary/Infection', 'Chronic Illness'],
+    disabilitytype:['ND', 'Physical Disability', 'Speech-language Disorder',  'Chronic Illness'],
     gender: ['Male', 'Female', 'Diverse'],
-    ethnicity: ['White', 'Black', 'Indigenous', 'Middle Eastern', 'East Asian', 'Afro-Latina', 'Latine','Mixed','Mixed/Multiracial', 'South Asian', 'Other/Unspecified'],
+    ethnicity: ['White', 'Black', 'Indigenous', 'Middle Eastern / West Asian', 'East Asian', 'Latine','Mixed','Mixed/Multiracial', 'South Asian', 'Other / Unspecified'],
     perspective: ['1st Person', '2nd Person','3rd Person'],
-    species: ["ADHD", "Anxiety", "Apraxia", "A/autism", "AAC", 'Blind/low vision','Cerebral Palsy', "Chickenpox", "Deafness", "Depression", "Down Syndrome",  "HIV",'Learning Disability','Stuttering',"Trauma","Tourette Syndrome" ],
-     specifictype: ["ADHD", "Anxiety", "Apraxia", "A/autism", "AAC", 'Blind/low vision','Cerebral Palsy', "Chickenpox", "Deafness", "Depression", "Down Syndrome",  "HIV",'Learning Disability','Stuttering',"Trauma","Tourette Syndrome" ], species: ["ADHD", "Anxiety", "Apraxia", "A/autism", "AAC", 'Blind/low vision','Cerebral Palsy', "Chickenpox", "Deafness", "Depression", "Down Syndrome",  "HIV",'Learning Disability','Stuttering',"Trauma","Tourette Syndrome" ],
+    species: ["A/autism", "AAC", "ADHD", "Alopecia", "Anxiety", "Apraxia", "Blind/low vision", "Cancer", "Cerebral palsy", "Craniofacial Disorder", "Deafness","Depression","Down syndrome", "Learning Disability", "Multiple sclerosis", "Stuttering","Tourette syndrome", "Trauma"],
+     specifictype: ["A/autism", "AAC", "ADHD", "Alopecia", "Anxiety", "Apraxia", "Blind/low vision", "Cancer", "Cerebral palsy", "Craniofacial Disorder", "Deafness","Depression","Down syndrome", "Learning Disability", "Multiple sclerosis", "Stuttering","Tourette syndrome", "Trauma"],
     itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations'],
-    authoridentity:["ND", "Physical", "Speech", "2SLGBTQI+", "Down syn.", "Chronic", "Indigenous"]
+    authoridentity:["Author Identity"]
 
   }
 
