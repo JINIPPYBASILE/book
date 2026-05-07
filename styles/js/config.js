@@ -39,6 +39,7 @@ charadex.sheet = {
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
+      imageGallery:  "image gallery"
   },
 
 
@@ -306,7 +307,50 @@ charadex.page.faq = {
 
 }
 
+/* Image Gallery
+/* --------------------------------------------------------------- */
+charadex.page.imageGallery = {
 
+  sheetPage: charadex.sheet.pages.imageGallery,
+  sitePage: 'gallery',
+  dexSelector: 'charadex',
+  profileProperty: 'id',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {}
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Title', 'Illustrator']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
 
 /* Masterlist
 /* --------------------------------------------------------------- */
@@ -358,6 +402,33 @@ charadex.page.masterlist = {
 
   relatedData: {
 
+[charadex.sheet.pages.imageGallery]: {
+
+    ... charadex.page.imageGallery,
+
+    sheetPage: charadex.sheet.pages.imageGallery,
+    primaryProperty: 'design',
+    relatedProperty: 'designs',
+    dexSelector: 'gallery',
+    profileProperty: 'id',
+    profileToggle: false,
+
+    sort: {
+      toggle: true,
+      key: "id",
+      order: "asc",
+      parameters: []
+    },
+
+    pagination: {
+      toggle: true,
+      bottomToggle: true,
+      amount: 12,
+    }
+
+  },
+    
+
     [charadex.sheet.pages.masterlistLog]: {
 
       sheetPage: charadex.sheet.pages.masterlistLog,
@@ -381,6 +452,9 @@ charadex.page.masterlist = {
       },
 
     }
+
+
+    
 
   }
 

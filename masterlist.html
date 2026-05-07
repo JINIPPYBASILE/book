@@ -70,7 +70,7 @@
 
            <div class="row no-gutters col-12 ">
              <div class="row no-gutters col-3 ">
-        <div class="badge badge-info col-3 mr-2 px-2 ">Text</div> <span class="col-7"><small>- Featured Book</small></span></div>
+        <div class="badge badge-info col-3 mr-2 px-2 ">Text</div> <span class="col-7"><small>- Celebration Shelf</small></span></div>
         <div class="row no-gutters col-4">
              <div class="badge badge-success col-3 px-2  mr-2">Text</div> <span class="col-7">
             <small>- Author Identity</small>
@@ -106,7 +106,7 @@
             </div>
 
                 <div class=" col-lg-6 col-6 " >
-              <a class="btn btn-primary col-12 charadex-folder-button col-12" href="masterlist.html?featured=yes">     Featured</a>
+              <a class="btn btn-primary col-12 charadex-folder-button col-12" href="masterlist.html?featured=yes">    Celebration Shelf</a>
         
             </div>
 
@@ -279,6 +279,12 @@
             <a class="w-100 btn btn-primary active" id="profile-tab" data-toggle="tab" href="#profile" 
             aria-controls="profile" aria-selected="true">Profile</a>
           </li>
+
+
+            <li class="col p-1 nav-item" role="presentation">
+    <a class="w-100 btn btn-primary" id="image-gallery-tab" data-toggle="tab" href="#image-gallery" 
+    aria-controls="image-gallery" aria-selected="true">Gallery</a>
+  </li>
          <!-- <li class="col p-1 nav-item" role="presentation">
             <a class="w-100 btn btn-primary" id="logs-tab" data-toggle="tab" href="#logs" aria-controls="logs" 
             aria-selected="false">Logs</a>
@@ -303,7 +309,7 @@
 
                   <!-- Item -->
                      <b class="text-muted">Classified as:</b>
-                    <small> <i class="text-primary ">To understand how our project defines these terms, please refer to our  <a href="index.html">main page</a> for some notes.</i></small>
+                    <small> <i class="text-primary ">To understand how our project uses these terms, please refer to our  <a href="index.html">main page</a> for some notes.</i></small>
               
                      <div class="row no-gutters mt-2">
 <span class="badge badge-primary species col-auto p-1 mr-2 mb-1"></span>
@@ -372,6 +378,66 @@
 
             </div>
           </div>
+
+
+           <!-- Image Gallery
+  <!-- ----------------------------------------------------------- -->
+  <div class="tab-pane fade" id="image-gallery" role="tabpanel" aria-labelledby="image-gallery-tab" tabindex="0">
+    <h4 class="text-primary">Gallery</h4>
+    <div class="card bg-faded p-2 mb-3">
+      <i class="">Note that the image gallery is currently a <b>work in progress</b>! For now, only our <b>celebration shelf books</b> have a featured gallery.</i>
+    </div>
+    <div id="gallery-gallery">
+
+      <!-- Pagination
+      <!-- --------------------------------------------------------------- -->
+      <div style="display: none;" class="gallery-pagination-container">
+        <hr>
+        <div class="nav d-flex justify-content-center my-n2">
+          <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+          <ul class="pagination gallery-pagination gallery-pagination-top justify-content-center m-0"></ul>
+          <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+        </div>
+        <hr>
+      </div>
+
+      <!-- List -->
+      <!-- --------------------------------------------------------------- -->
+      <div class="row no-gutters m-n2 gallery-list"></div>
+
+      <!-- List Item -->
+      <!-- --------------------------------------------------------------- -->
+      <div style="display: none;">
+        <div class="col-md-4 p-2" id="gallery-gallery-item">
+          <div class="card bg-faded">
+
+            <!-- Image-->
+            <a class="card-body cd-gallery-card p-2 d-flex flex-fill profilelink" href="">
+              <img class="image img-fluid m-auto rounded" src="" >
+            </a>
+
+            <!-- Artist -->
+            <div class="card-footer bg-faded text-right px-3 py-1 small">
+              Artist: <a class="artist artistlink"></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination
+      <!-- --------------------------------------------------------------- -->
+      <div style="display: none;" class="gallery-pagination-container">
+        <hr>
+        <div class="nav d-flex justify-content-center my-n2">
+          <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+          <ul class="pagination gallery-pagination gallery-pagination-bottom justify-content-center m-0"></ul>
+          <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
           
           
           <!-- Logs

@@ -339,9 +339,16 @@ a:active {
 
 .navbar .navbar-brand {
   color: var(--cd-navbar-brand-color) !important;
-  font-size: 2rem;
+  font-size: 1.5rem;
    text-decoration:none !important
 }
+@media (min-width:800px) {
+.navbar .navbar-brand  {
+  font-size:2rem 
+}
+}
+
+
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {

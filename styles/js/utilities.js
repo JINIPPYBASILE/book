@@ -287,7 +287,7 @@ charadex.manageData = {
 
   },
 
- /* Relates data to a main sheet via a key
+/* Relates data to a main sheet via a key
   ===================================================================== */
   async relateData (primaryArray, primaryKey, secondaryPageName, secondaryKey) {
 
@@ -307,7 +307,6 @@ charadex.manageData = {
     }
 
   },
-
   /* Fixes old style of inventories
   ===================================================================== */
   async inventoryFix(profileArray) {
