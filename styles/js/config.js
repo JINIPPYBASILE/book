@@ -16,8 +16,8 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "Inclusive Book Archive",
-    url: "http://127.0.0.1:3000/c:/Users/verab/Desktop/book-charadex/",
-/*url: "https://jinippybasile.github.io/book/",*/
+  /*  url: "http://127.0.0.1:3000/c:/Users/verab/Desktop/book-charadex/",*/
+url: "https://jinippybasile.github.io/book/",
   description: `An archive of inclusive children's books.`
 }
 
